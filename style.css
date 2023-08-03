@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+/* j'utilise tjrs la mm méthode */
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+header img,footer img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+header{
+    background-image: url("images/bg-header-desktop.png");
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer{
+    background-color: hsl(201, 11%, 66%);
+}
+
+.images img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.pieds-de-page{
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-footer{
+    display: flex;
+    gap: 20px;
+}
+
+.contact{
+    width: 100%;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.cadre0,.cadre1,.carre-tablette-texte1{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 60px;
+}
+
+.cadre0 p{
+    margin: 10px;
+}
+
+.cadre1 h2,.carre-tablette-texte1 h2,.carre-tablette-texte2 h2,.cadre3-texte h2{
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.ios,.mac{
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+}
+.ios{
+    background-color: hsl(171, 66%, 44%);
+    border: 1px solid hsl(171, 66%, 44%) ;
+}
+
+.mac{
+    background-color: hsl(233, 100%, 69%);
+    border: 1px solid hsl(233, 100%, 69%);
+}
+
+.boutton,.button-cadre3{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 0px 0px 80px 0px;
+    
+}
+
+.carre-computeur{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.carre-computeur img ,.carre-tablette img{
+    width: 100%;
+}
+.carre-computeur-texte{
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.carre-computeur-texte div{
+    width: 350px;
+    margin-bottom: 60px;
+}
+
+.carre-computeur-texte h3{
+    padding-bottom: 10px;
+}
+
+.carre-tablette-texte2{
+    text-align: center;
+
+}
+
+.carre-tablette{
+    margin-bottom: 80px;
+}
+
+.cadre2,.images-pateformes{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.cadre2 div{
+    width: 350px;
+}
+
+.cadre2 div img,.cadre2 div h3{
+    padding-bottom: 20px;
+}
+
+.cadre2 p,.carre-computeur-texte p{
+    line-height: 1.5;
+}
+
+.cadre3-texte{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.conteneur {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.contact p:hover{
+    color: hsl(171, 66%, 44%)
+}
+img:hover{
+    opacity: 0.8;
+}
+
+button[class="ios"]:hover{
+    background-color: hsl(171, 66%, 35%);
+}
+
+button[class="mac"]:hover{
+    background-color: hsl(233, 100%, 60%);
+}
+
+@media screen and (max-width: 900px) {
+
+    .boutton,.button-cadre3{
+       flex-direction: column;
+       width: 90%;
+       margin: auto;
+       margin-bottom: 100px;
+}
+   .cadre2,.images-pateformes,.carre-computeur,.pieds-de-page{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.images-pateformes{
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+}
+
+.carre-computeur-texte{
+    text-align: center;
+    margin: 80px 0% 0% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carre-computeur-texte h3{
+    font-size: 30px;
+}
+
+.carre-computeur img{
+    width: 90%;
+
+}
+.text-footer{
+    flex-direction: column;
+    align-items: center;
+}
+.contact{
+    margin: 0% 0% 40px 0%;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+
+}
+.cadre0,.cadre1,.cadre3-texte{
+    width: 100%;
+}
+.carre-tablette-texte1{
+    width: 80%;
+}
+
+}
